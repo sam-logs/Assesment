@@ -21,8 +21,8 @@ static Scanner sc = new Scanner(System.in);
 				* Math.pow(Math.sin(lon / 2),2);
 
 		double res = 2 * Math.asin(Math.sqrt(a));
-
-		double radius = 1.5;
+		System.out.println("Enter Radius");
+		double radius = sc.nextDouble();		
 		double dis = res*radius;
 		
 		return(dis);

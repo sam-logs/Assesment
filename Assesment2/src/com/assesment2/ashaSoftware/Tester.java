@@ -38,19 +38,21 @@ public class Tester {
 		}
 		else if(choice == 3) {
 			//for searching nearby
-			Distance ob = new Distance();
-			ob.display();
 			HotelSearch obj = new HotelSearch();
-			obj.findHotel();
-			System.out.println("Didn't get your hotels! find more");
+			if(Distance.distance() <= 1.5) {
+				
+				obj.findHotel();
+			}else {
+				obj.distanceHotels();
+			}
+			
+		//	System.out.println("Didn't get your hotels! find more");
 			//for searching farby
 
-			int more =sc.nextInt();
-			if(more == 4) {
-				obj.distanceHotels();
+//			int more =sc.nextInt();
+//			if(more == 4) {
+//				obj.distanceHotels();
 			}
 		}
 	}
-}
-
 
