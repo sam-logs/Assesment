@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import main.com.company.Service.ReferralCode;
+import main.com.company.bean.ReferralCode;
 
 class TestingFrameworkMain {
 	private List<ReferralCode> list;

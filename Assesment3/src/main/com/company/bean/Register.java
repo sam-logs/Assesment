@@ -1,4 +1,4 @@
-package main.com.company.Service;
+package main.com.company.bean;
 
 public class Register {
 	// creating signup form for user with following data members.

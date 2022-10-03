@@ -1,4 +1,4 @@
-package main.com.company.Service;
+package main.com.company.bean;
 
 import java.io.Serializable;
 import java.util.Scanner;
@@ -21,13 +21,13 @@ public class PhonePurchase implements Serializable {
 					ReferralCode.points = 1000;
 					System.out.println("Your Code has been Successfully Applied!!hoorah");
 					System.out.println("\nYou have won a Coupoun Code");
-					ReferralCode.createCoupounCode();
+					CoupounCode.createCoupounCode();
 					System.out.println("You have won Coupon code, Do you want to use it:");
 					String response = sc.next();
 					if (response.contains("yes")) {
 						System.out.println("Please Enter Coupon Code: ");
 						String offer = sc.next();
-						if (ReferralCode.Code.equalsIgnoreCase(offer)) {
+						if (CoupounCode.Code.equalsIgnoreCase(offer)) {
 							System.out.println("20% discount applied!! ");
 						}
 					}
@@ -38,10 +38,6 @@ public class PhonePurchase implements Serializable {
 		} else {
 			System.out.println("Please visit us Next time!!");
 		}
-	}
-
-	public void updatedPoints() {
-		ReferralCode.points += 1000;
 	}
 
 }

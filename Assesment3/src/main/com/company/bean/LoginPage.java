@@ -1,9 +1,7 @@
-package main.com.company.Service;
-
-import java.io.PrintStream;
+package main.com.company.bean;
 
 public class LoginPage {
-	public PrintStream out =System.out;
+
 	// creating login page for user with following data members;
 	private String userName;
 	private String password;
